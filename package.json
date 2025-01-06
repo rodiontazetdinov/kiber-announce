@@ -1,0 +1,7 @@
+{
+  "homepage": "https://rodiontazetdinov.github.io/kiber-announce",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+} 
