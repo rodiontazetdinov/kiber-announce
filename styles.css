@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(135deg, #ffd700 0%, #ffb700 100%);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .glass-card {
@@ -9,6 +10,24 @@ body {
     border-radius: 1rem;
     border: 2px solid rgba(255, 215, 0, 0.3);
     box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.2);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .glass-card {
+        padding: 1rem;
+    }
+
+    input[type="date"] {
+        font-size: 16px; /* Предотвращает зум на iOS */
+    }
 }
 
 .hidden {

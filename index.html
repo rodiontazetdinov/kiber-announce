@@ -16,13 +16,13 @@
             </h1>
 
             <form id="announceForm" class="space-y-4">
-                <div class="flex gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <label class="text-white block mb-2">Дата занятия</label>
                         <input
                             type="date"
                             name="currentDate"
-                            class="input input-bordered w-full"
+                            class="input input-bordered w-full min-w-0"
                             required
                         />
                     </div>
@@ -31,7 +31,7 @@
                         <input
                             type="date"
                             name="nextDate"
-                            class="input input-bordered w-full"
+                            class="input input-bordered w-full min-w-0"
                             required
                         />
                     </div>
